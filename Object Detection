@@ -1,0 +1,69 @@
+
+logo
+
+Frigate - NVR With Realtime Object Detection for IP Cameras
+A complete and local NVR designed for Home Assistant with AI object detection. Uses OpenCV and Tensorflow to perform realtime object detection locally for IP cameras.
+
+Use of a Google Coral Accelerator is optional, but highly recommended. The Coral will outperform even the best CPUs and can process 100+ FPS with very little overhead.
+
+Tight integration with Home Assistant via a custom component
+Designed to minimize resource use and maximize performance by only looking for objects when and where it is necessary
+Leverages multiprocessing heavily with an emphasis on realtime over processing every frame
+Uses a very low overhead motion detection to determine where to run object detection
+Object detection with TensorFlow runs in separate processes for maximum FPS
+Communicates over MQTT for easy integration into other systems
+Records video with retention settings based on detected objects
+24/7 recording
+Re-streaming via RTMP to reduce the number of connections to your camera
+Documentation
+View the documentation at https://docs.frigate.video
+
+Donations
+If you would like to make a donation to support development, please use Github Sponsors.
+
+Screenshots
+Integration into Home Assistant
+
+ 
+Also comes with a builtin UI:
+
+ 
+Events
+
+Releases 74
+0.9.4 Release
+Latest
+on 25 Oct 2021
++ 73 releases
+Sponsor this project
+@blakeblackshear
+blakeblackshear Blake Blackshear
+@paularmstrong
+paularmstrong Paul Armstrong
+Learn more about GitHub Sponsors
+Packages
+No packages published
+Contributors 63
+@blakeblackshear
+@paularmstrong
+@hunterjm
+@ElMoribond
+@tubalainen
+@flacjacket
+@herostrat
+@sinamics
+@dependabot[bot]
+@pdecat
+@walthowd
++ 52 contributors
+Environments 1
+ github-pages Active
+Languages
+Python
+57.8%
+ 
+JavaScript
+41.2%
+ 
+Other
+1.0%
